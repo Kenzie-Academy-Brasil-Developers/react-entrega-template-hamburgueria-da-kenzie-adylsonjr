@@ -22,6 +22,7 @@ export const SectionCart = styled.section`
     height: 250px;
 
     @media (min-width: 768px){
+        width: unset;
         min-width: 300px;
         height: 320px;
     }
