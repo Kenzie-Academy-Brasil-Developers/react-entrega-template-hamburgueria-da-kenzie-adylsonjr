@@ -1,8 +1,13 @@
 import React from 'react'
+import { toast } from 'react-toastify'
 import {CardProduct} from './CardProduct'
 import { UlProducts } from './ProductsListStyle'
 
 export const ProductsList = ({productsList, addProductToCartList, searchProductsList }) => {
+
+  if(searchProductsList.length == 0){
+    toast.warning("Produto não encontrado")
+  }
   return (
     <>
          <UlProducts>

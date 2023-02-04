@@ -24,11 +24,12 @@ function App() {
   const [cartList, setCartList] = useState(localCartList ? JSON.parse(localCartList) : []);
   const [countProduct, setCountProduct] = useState(1)
   const [search, setSearch] = useState("")
+  
   const searchProductsList = productsList.filter((product) => {
     return search === "" ? true : (product.name.toLocaleLowerCase()).includes(search.toLocaleLowerCase()) ||
       (product.category.toLocaleLowerCase()).includes(search.toLocaleLowerCase())
-  })
-
+    })
+   
   useEffect(() => {
 
     async function loadingProductsData() {
