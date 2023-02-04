@@ -11,5 +11,19 @@ export const DivTitleCart = styled.div`
 export const UlCartList = styled.ul`
     width: 100%;
     max-height: 500px;
+    min-height: 65px;
     overflow: scroll;
+     ::-webkit-scrollbar{
+        width: 0px;
+    }
+     ::-webkit-scrollbar-thumb{
+        width: 0px;
+       
+     }
+`
+export const DivContainerCartEmpty = styled.div`
+    justify-content: space-around;
+    height: 56%;
+    align-items: center;
+    padding: 0.5rem;
 `

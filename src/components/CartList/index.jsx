@@ -2,7 +2,7 @@ import React from 'react'
 import { ParagrCartListEmpty, TitleCartList, TitleCartListEmpty } from '../../Styles/typography'
 // import { CartList } from './CartList'
 import { CardCartList } from './CardCartList'
-import { DivTitleCart, UlCartList } from './cartListStyle'
+import { DivContainerCartEmpty, DivTitleCart, UlCartList } from './cartListStyle'
 
 export const CartList = ({ cartList, removeProductFromCartList }) => {
 
@@ -19,8 +19,10 @@ export const CartList = ({ cartList, removeProductFromCartList }) => {
         </UlCartList>
       ) : (
         <>
+        <DivContainerCartEmpty>
           <TitleCartListEmpty>Sua sacola está vázia</TitleCartListEmpty>
           <ParagrCartListEmpty>Adicione itens</ParagrCartListEmpty>
+        </DivContainerCartEmpty>
         </>
       )}
     </>

@@ -11,6 +11,7 @@ export const UlProducts = styled.ul`
     @media (min-width: 768px){
         flex-wrap: wrap;
         overflow: unset;
+        justify-content: center;
     }
 
 `

@@ -1,6 +1,6 @@
 import React from 'react'
 import { ParagrCardCategory, TitleCartListCard } from '../../../Styles/typography'
-import { CardCart, ImgCartCard } from './cardCartListStyle'
+import { CardCart, DivRemoveAmountCartList, ImgCartCard } from './cardCartListStyle'
 
 export const CardCartList = ({ product, removeProductFromCartList }) => {
   return (
@@ -10,10 +10,10 @@ export const CardCartList = ({ product, removeProductFromCartList }) => {
         <TitleCartListCard>{product.name}</TitleCartListCard>
         <ParagrCardCategory>{product.category}</ParagrCardCategory>
       </div>
-      <div>
+      <DivRemoveAmountCartList>
         <button onClick={() => removeProductFromCartList(product.uuid)}>Remover</button>
         <span>{product.amount}</span>
-      </div>
+      </DivRemoveAmountCartList>
     </CardCart>
   )
 }

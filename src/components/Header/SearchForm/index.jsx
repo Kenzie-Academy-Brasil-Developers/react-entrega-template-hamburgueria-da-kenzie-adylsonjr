@@ -9,7 +9,7 @@ export const SearchForm = ({setSearch}) => {
         event.preventDefault();
         setSearch(searchValue)
         setSearchValue("")
-    }
+      }
 
   return (
     <>

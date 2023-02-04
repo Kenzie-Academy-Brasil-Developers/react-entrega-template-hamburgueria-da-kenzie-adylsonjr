@@ -19,10 +19,11 @@ export const ButtonGreyDefault = styled.button`
     align-items: center;
     justify-content: center;
     transition: .3s;
-    height: 40px;
+    height: 60px;
     border-radius: 8px;
     background-color: var(--grey-20);
     color: var(--grey-50);
+    width: 100%;
     &:hover{
         background-color: var(--grey-50);
         color: var(--grey-20);

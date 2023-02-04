@@ -83,6 +83,12 @@ function App() {
 
   }
 
+  const removeAllProductsFromCartList = ()=>{
+
+    setCartList([])
+
+  }
+
 
 
 
@@ -102,7 +108,7 @@ function App() {
             </SectionProducts>
             <SectionCart className='cart'>
               <CartList cartList={cartList} removeProductFromCartList={removeProductFromCartList} />
-              <CartTotal cartList={cartList} />
+              <CartTotal cartList={cartList} removeAllProductsFromCartList={removeAllProductsFromCartList}/>
             </SectionCart>
           </Container>
 

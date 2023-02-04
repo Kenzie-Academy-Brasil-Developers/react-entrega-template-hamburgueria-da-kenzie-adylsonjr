@@ -15,11 +15,15 @@ export const SectionCart = styled.section`
     background: var(--grey-0);
     border-radius: 5px;
     align-items: center;
-    gap: 25px;
-    padding-bottom: 30px;
     width: 100%;
     overflow: scroll;
-    height: 250px;
+    height: 275px;
+    ::-webkit-scrollbar{
+        width: 0px;
+    }
+     ::-webkit-scrollbar-thumb{
+        width: 0px;
+     }
 
     @media (min-width: 768px){
         width: unset;
