@@ -2,15 +2,17 @@ import React, { useState } from 'react'
 import { ButtonGreenMedium } from '../../../Styles/buttons'
 import { Form, Input } from './searchFormStyle'
 
-export const SearchForm = ({setSearch}) => {
+
+export const SearchForm = ({setSearch }) => {
     const [searchValue, setSearchValue] = useState("")
     
     const submit = (event)=>{
         event.preventDefault();
         setSearch(searchValue)
         setSearchValue("")
-       
       }
+
+      
 
   return (
     <>

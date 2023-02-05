@@ -42,6 +42,7 @@ export const TitleCartListEmpty = styled.h3`
     font-weight: 700;
     color: var(--grey-100);
     margin: 10px;
+    text-align: center;
     `
 export const TitleCartListCard = styled.h3`
     font-family: "Inter", sans-serif;

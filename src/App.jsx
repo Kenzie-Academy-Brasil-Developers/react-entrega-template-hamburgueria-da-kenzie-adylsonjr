@@ -56,6 +56,7 @@ function App() {
     localStorage.setItem("@KenzieBurguerCartList", JSON.stringify(cartList));
   }, [cartList])
 
+
   const addProductToCartList = (product) => {
 
 
@@ -89,9 +90,6 @@ function App() {
     setCartList([])
 
   }
-
-
-
 
 
   return (
