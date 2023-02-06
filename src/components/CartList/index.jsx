@@ -19,10 +19,10 @@ export const CartList = ({ cartList, removeProductFromCartList }) => {
         </UlCartList>
       ) : (
         <>
-        <DivContainerCartEmpty>
-          <TitleCartListEmpty>Sua sacola está vázia</TitleCartListEmpty>
-          <ParagrCartListEmpty>Adicione itens</ParagrCartListEmpty>
-        </DivContainerCartEmpty>
+          <DivContainerCartEmpty>
+            <TitleCartListEmpty>Sua sacola está vázia</TitleCartListEmpty>
+            <ParagrCartListEmpty>Adicione itens</ParagrCartListEmpty>
+          </DivContainerCartEmpty>
         </>
       )}
     </>

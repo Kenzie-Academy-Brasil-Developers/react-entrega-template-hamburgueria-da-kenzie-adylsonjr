@@ -37,7 +37,6 @@ function App() {
       try {
         setLoading(true)
         const response = await api.get("products")
-        console.log(response.data)
         setProductsList(response.data)
       } catch (error) {
         console.log(error)
@@ -70,7 +69,6 @@ function App() {
 
       setCountProduct(product.amount + 1)
       product.amount += 1
-      console.log(product)
       toast.success(`Adicionado mais um ${product.name}`)
     }
   }

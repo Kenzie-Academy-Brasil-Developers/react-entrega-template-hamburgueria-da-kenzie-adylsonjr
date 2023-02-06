@@ -9,8 +9,13 @@ export const LiProducts = styled.li`
     justify-content: space-around;
     min-width: 300px;
 `
+export const DivImgProduct = styled.div`
+width: 100%;
+`
+
 export const ImgProduct = styled.img`
     background: var(--grey-0);
+    object-fit: scale-down;
     width: 100%;
    `
 export const DivCardProduct = styled.div`

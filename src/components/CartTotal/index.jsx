@@ -5,7 +5,7 @@ import { DivCartTotal, DivContainerCartTotal } from './cartTotalstyle'
 
 export const CartTotal = ({ cartList, removeAllProductsFromCartList }) => {
 
-    const totalValue = cartList.reduce((acum, currt)=>{
+    const totalValue = cartList.reduce((acum, currt) => {
         let value = 0
         value = currt.price * currt.amount
 
@@ -14,15 +14,15 @@ export const CartTotal = ({ cartList, removeAllProductsFromCartList }) => {
 
     return (
         <>
-        {cartList.length > 0 && (
-            <DivContainerCartTotal>
-            <DivCartTotal>
-                <ParagrTotalCart>Valor total</ParagrTotalCart>
-                <ParagrTotalCartValue>{totalValue.toFixed(2)}</ParagrTotalCartValue>
-            </DivCartTotal>
-            <ButtonGreyDefault onClick={()=>{removeAllProductsFromCartList()}}>Remover todos</ButtonGreyDefault>
-            </DivContainerCartTotal>
-        )}
+            {cartList.length > 0 && (
+                <DivContainerCartTotal>
+                    <DivCartTotal>
+                        <ParagrTotalCart>Valor total</ParagrTotalCart>
+                        <ParagrTotalCartValue>{totalValue.toFixed(2)}</ParagrTotalCartValue>
+                    </DivCartTotal>
+                    <ButtonGreyDefault onClick={() => { removeAllProductsFromCartList() }}>Remover todos</ButtonGreyDefault>
+                </DivContainerCartTotal>
+            )}
 
         </>
     )
