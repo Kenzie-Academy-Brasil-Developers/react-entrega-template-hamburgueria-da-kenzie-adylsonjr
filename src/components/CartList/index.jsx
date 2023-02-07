@@ -20,7 +20,7 @@ export const CartList = ({ cartList, removeProductFromCartList }) => {
       ) : (
         <>
           <DivContainerCartEmpty>
-            <TitleCartListEmpty>Sua sacola está vázia</TitleCartListEmpty>
+            <TitleCartListEmpty>Sua sacola está vazia</TitleCartListEmpty>
             <ParagrCartListEmpty>Adicione itens</ParagrCartListEmpty>
           </DivContainerCartEmpty>
         </>
